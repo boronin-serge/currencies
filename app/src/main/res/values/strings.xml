@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Currencies</string>
+
+  <string name="title">Rates</string>
+  <string name="zero">0</string>
+  <string name="flagUrl">https://www.countryflags.io/%s/flat/64.png</string>
+  <string name="unknown">Неизвестно</string>
+  <string name="error">Что-то пошло не так :(</string>
+</resources>
