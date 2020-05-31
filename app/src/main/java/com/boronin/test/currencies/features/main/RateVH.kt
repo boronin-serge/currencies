@@ -91,7 +91,11 @@ class RateVH(
       result == DEFAULT_FLOAT -> DEFAULT_STRING
       result > 1e7 -> DEFAULT_STRING
       else -> result.toString()
-    }.run { replace(ZERO_END, DEFAULT_STRING) }
+    }.run {
+      if (result - result.toInt() == 0f) {
+        replace(ZERO_END, DEFAULT_STRING)
+      } else this
+    }
 
     if (resultStr != value.text.toString()) {
       value.setText(resultStr)
