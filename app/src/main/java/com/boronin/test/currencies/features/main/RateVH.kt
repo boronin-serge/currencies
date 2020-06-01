@@ -118,8 +118,6 @@ class RateVH(
       if (hasFocus) {
         activateItem(itemView)
         value.setSelection(value?.text?.length ?: 0)
-      } else {
-        value.clearFocus()
       }
     }
   }
